@@ -1,0 +1,122 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+
+@media all and (max-width:550px){
+
+.suck_logo{
+    width: 45px;
+}
+
+#dropdown-menu{
+    display: none;
+}
+body{
+    background-image: url(./images/rikke-hembre-GFi8VPjbiyA-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.nav_bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+}
+.suck_logolink{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: coral;
+    font-size: 1.9rem;
+    
+}
+.fa-bars{
+    background-color: rgba(0, 0, 0, 0.572);
+    padding: 6px;
+    border-radius: 10px;
+    color: coral;
+    font-size: 1.6rem;
+}
+.bar_menu{
+    margin-left: auto;
+}
+
+sup{
+    font-size: .7rem;
+}
+div.swipe{
+    margin: 0 auto;
+    width: fit-content;
+
+}
+.suckright{
+    background-color: rgba(0, 0, 0, 0.288);
+    color: coral;
+    font-size: 2rem;
+    margin-top: 180px;
+    padding: 10px;
+    border-radius: 20px;
+    
+}
+div.createaccount{
+    margin-top: 210px;
+    text-align: center;
+}
+div.createaccount a{
+    font-size: 1.7rem;
+    background: linear-gradient(190deg, coral 60%, rgba(0, 0, 0, 0.647));
+    color: bisque;
+    padding: 10px 100px;
+    border-radius: 20px;
+}
+div.login{
+    margin-top: 40px;
+    text-align: center;
+    
+}
+div.login a{
+    font-size: 1.7rem;
+    padding: 8px 143px;
+    color: white;
+    border: 2px solid rgba(0, 0, 0, 0.497);
+    border-radius: 20px;
+    
+}
+
+#loadscreen{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(coral, black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+#loading_img{
+    width: 95px;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+@keyframes pulse{
+    0%,100%{
+        transform: scale(3);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+}
+
+}
+
