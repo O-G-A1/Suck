@@ -67,7 +67,7 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 127, 80, 0.935);
+    background-color: rgb(255, 127, 80);
     display: flex;
     flex-direction: column;
     transform: translate(-100%);
@@ -75,14 +75,16 @@ body{
     z-index: 999;
 }
 .dropdown-menu ul{
-    list-style: none;
-    padding: 0;
+    list-style: disc;
+    padding: 15vmin 10vmin;
 }
 .dropdown-menu ul li{
-    margin: 20px 0;
+    margin: 25px 0;
     font-size: 1.5rem;
 }
 .dropdown-menu ul li a{
+    background-color: rgba(0, 0, 0, 0.572);
+    padding: 2vmin;
     color: white;
     text-decoration: none;
     transition: color 0.3s ease ;
@@ -100,7 +102,20 @@ body{
     opacity: 0;
 }
 .bar_menu.active span:nth-child(3){
-    transform: rotate(-45deg) translate(5px, -6px);
+    transform: rotate(-45deg) translate(5px, -7px);
+}
+
+#login_bar{
+    margin-top: 40vh;
+    text-align: center;
+}
+.login-btnbar{
+    background-color: rgba(0, 0, 0, 0.572);
+    border-radius: 20px;
+    font-size: 1.7rem;
+    padding: 1.8vmin 27vmin;
+    color: white;
+
 }
 
 sup{
