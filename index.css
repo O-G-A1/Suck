@@ -19,9 +19,6 @@ a{
     width: 50px;
 }
 
-#dropdown-menu{
-    display: none;
-}
 body{
     background-image: url(./images/rikke-hembre-GFi8VPjbiyA-unsplash.jpg);
     background-size: cover;
@@ -54,7 +51,7 @@ body{
     top: 25px;
     right: 20px;
     cursor: pointer;
-    z-index: 900;
+    z-index: 1000;
 }
 .bar_menu span{
     display: block;
@@ -63,6 +60,47 @@ body{
     background: coral;
     margin: 6px 0;
     transition: all 0.3s ease;
+}
+.dropdown-menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 127, 80, 0.935);
+    display: flex;
+    flex-direction: column;
+    transform: translate(-100%);
+    transition: tranform 0.5s ease;
+    z-index: 999;
+}
+.dropdown-menu ul{
+    list-style: none;
+    padding: 0;
+}
+.dropdown-menu ul li{
+    margin: 20px 0;
+    font-size: 1.5rem;
+}
+.dropdown-menu ul li a{
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease ;
+}
+.dropdown-menu ul li a:hover{
+    color: #ff7e5f;
+}
+.dropdown-menu.active{
+    transform: translateY(0);
+}
+.bar_menu.active span:nth-child(1){
+    transform: rotate(45deg) translate(7px, 5px);
+}
+.bar_menu.active span:nth-child(2){
+    opacity: 0;
+}
+.bar_menu.active span:nth-child(3){
+    transform: rotate(-45deg) translate(5px, -6px);
 }
 
 sup{
@@ -119,7 +157,7 @@ div.login a{
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 1000;
+    z-index: 1001;
 }
 #loading_img{
     width: 95px;
