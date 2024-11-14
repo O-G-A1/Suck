@@ -67,7 +67,7 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(255, 127, 80);
+    background-color: bisque;
     display: flex;
     flex-direction: column;
     transform: translate(-100%);
@@ -85,9 +85,9 @@ body{
 .dropdown-menu ul li a{
     background-color: rgba(0, 0, 0, 0.572);
     padding: 2vmin;
-    color: white;
+    color: coral;
     text-decoration: none;
-    transition: color 0.3s ease ;
+    transition: color 0.3s ease;
 }
 .dropdown-menu ul li a:hover{
     color: #ff7e5f;
@@ -111,10 +111,9 @@ body{
 }
 .login-btnbar{
     background-color: rgba(0, 0, 0, 0.572);
-    border-radius: 20px;
     font-size: 1.7rem;
     padding: 1.8vmin 27vmin;
-    color: white;
+    color: coral;
 
 }
 
