@@ -4,4 +4,4 @@ setTimeout(()=>{
     document.getElementById("maincontent").style.display="block";
 
 
-},3000);
+},1500);
