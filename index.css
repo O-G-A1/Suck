@@ -74,15 +74,16 @@ div.swipe{
     
 }
 div.createaccount{
-    margin-top: 65%;
+    margin-top: 40vh;
     text-align: center;
 }
 div.createaccount a{
     font-size: 1.7rem;
     background: linear-gradient(190deg, coral 60%, rgba(0, 0, 0, 0.647));
     color: bisque;
-    padding: 10px 100px;
+    padding: 2vmin 18vmin;
     border-radius: 20px;
+    text-wrap: nowrap;
 }
 div.login{
     margin-top: 40px;
@@ -91,10 +92,11 @@ div.login{
 }
 div.login a{
     font-size: 1.7rem;
-    padding: 8px 143px;
+    padding: 1.8vmin 27vmin;
     color: white;
     border: 2px solid rgba(0, 0, 0, 0.497);
     border-radius: 20px;
+    text-wrap: nowrap;
     
 }
 
