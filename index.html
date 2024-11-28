@@ -1,57 +1,327 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Suck|Hook_Your_Pleasure</title>
-    <link rel="stylesheet" href="./index.css">
-    <link rel="icon" href="./Icons/iconmonstr-heart-plus-lined.svg">
-</head>
-<body>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="icon" href="./Icons/iconmonstr-heart-plus-lined.svg" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
+  </head>
+  <body>
     <!-- loadscreen -->
     <div id="loadscreen">
-        <img src="./Icons/iconmonstr-heart-plus-lined.svg" alt="loadscreen" id="loading_img">
+      <img
+        src="./Icons/iconmonstr-heart-plus-lined.svg"
+        alt="loadscreen"
+        id="loading_img"
+      />
     </div>
 
     <!-- pagemaincontent -->
-     <div id="maincontent">
-        <nav class="nav_bar">
+    <div id="maincontent">
+      <nav class="nav_bar">
+        <a href="#" class="suck_logolink"
+          ><img
+            class="suck_logo"
+            src="./Icons/iconmonstr-heart-plus-lined.svg"
+            alt=""
+          />Suck</a
+        >
 
-            <a href="#" class="suck_logolink"><img class="suck_logo" src="./Icons/iconmonstr-heart-plus-lined.svg" alt="">Suck</a>
-
-            <div id="bar_menu" class="bar_menu" onclick="toggleMenu()">
-                 <span></span>
-                 <span></span>
-                 <span></span>
-            </div>
-
-            <div class="dropdown-menu" id="dropdown-menu">
-                <ul>
-                    <li><a href="#">Register</a></li>
-                    <li><a href="#">Learn</a></li>
-                    <li><a href="#">Our Services</a></li>
-                </ul>
-                <div class="loginbar" id="login_bar">
-                    <a href="#" class="login-btnbar">Log in</a>
-                </div>
-            </div>
-
-        </nav>
-
-        <!-- body of page -->
-        <div class="swipe">
-            <h3 class="suckright">Suck Right <sup>TM</sup></h3>
+        <div id="bar_menu" class="bar_menu" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-        <div class="createaccount">
-            <a href="#" class="createaccount-btn">Create account</a>
-        </div>
-        <div class="login">
-            <a href="#" class="login-btn">Log in</a>
-        </div>
-     </div>
 
+        <div class="dropdown-menu" id="dropdown-menu">
+          <ul>
+            <li><a href="#">Register</a></li>
+            <li><a href="#">Learn</a></li>
+            <li><a href="#">Our Services</a></li>
+          </ul>
+          <div class="loginbar" id="login_bar">
+            <a href="#" class="login-btnbar">Log in</a>
+          </div>
+        </div>
+      </nav>
 
-    <script src="https://kit.fontawesome.com/2f8df1a2ea.js" crossorigin="anonymous"></script>
+      <!-- body of page -->
+      <div class="swipe">
+        <h3 class="suckright">Suck Right <sup>TM</sup></h3>
+      </div>
+      <div class="createaccount">
+        <a href="#" class="createaccount-btn">Create account</a>
+      </div>
+      <div class="login">
+        <a href="#" class="login-btn">Log in</a>
+      </div>
+    </div>
+
+    <!-- slidesinbody -->
+    <div id="splide" class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <h2 class="lovestoryh2">A Swipe Away from Forever</h2>
+
+            <p class="characters">Jenna and Alex</p>
+            <hr />
+            <p class="story">
+              Jenna wasn’t looking for anything serious when she downloaded the
+              app. After a long week of work, she swiped right on Alex’s profile
+              because of his quirky bio: "Professional plant dad, amateur pizza
+              chef, and connoisseur of bad jokes." Their first chat was casual.
+              Alex broke the ice with a joke: "Why don’t skeletons fight each
+              other? They don’t have the guts." Jenna rolled her eyes but
+              laughed anyway.
+            </p>
+          </li>
+          <li class="splide__slide">
+            <p class="characters">...Jenna and Alex</p>
+            <hr />
+            <p class="story">
+              They agreed to meet up for drinks, expecting nothing more than a
+              fun evening. But the moment they started talking, it was like the
+              rest of the world faded away. One drink turned into three hours of
+              non-stop conversation. By the end of the night, Jenna knew she
+              wanted to see Alex again. What started as a hookup chat turned
+              into weekend hikes, late-night deep talks, and eventually, a
+              shared lease on an apartment full of plants and love.
+            </p>
+          </li>
+
+          <li class="splide__slide">
+            <p class="characters">Priya and Noah</p>
+            <hr />
+            <p class="story">
+              Priya was scrolling mindlessly through profiles one night when her
+              thumb accidentally swiped right on Noah, a guy whose profile
+              picture was just him holding a giant fish. She rolled her eyes but
+              decided to message him anyway. "Nice fish. Is that your only
+              personality trait?" she teased. Noah replied almost immediately:
+              "Only on weekends. On weekdays, I make terrible dad jokes and bake
+              surprisingly good cookies." Intrigued, Priya agreed to meet up for
+              coffee, mainly to see if Noah was as funny in person as he was
+              over text.
+            </p>
+          </li>
+          <li class="splide__slide">
+            <p class="characters">...Priya and Noah</p>
+            <hr />
+            <p class="story">
+              He showed up with a Tupperware full of cookies and an easy smile.
+              What was supposed to be a casual date turned into a six-hour
+              hangout, complete with an impromptu stroll through a park. Priya
+              realized that beneath the fish photo was a guy with a kind heart
+              and a sense of humor that kept her laughing for years to come.
+              Priya was scrolling mindlessly through profiles one night when her
+              thumb accidentally swiped right on Noah, a guy whose profile
+              picture was just him holding a giant fish. She rolled her eyes but
+              decided to message him anyway.
+            </p>
+          </li>
+          <li class="splide__slide">
+            <p class="characters">...Priya and Noah</p>
+            <hr />
+            <p class="story">
+              "Nice fish. Is that your only personality trait?" she teased. Noah
+              replied almost immediately: "Only on weekends. On weekdays, I make
+              terrible dad jokes and bake surprisingly good cookies." Intrigued,
+              Priya agreed to meet up for coffee, mainly to see if Noah was as
+              funny in person as he was over text. He showed up with a
+              Tupperware full of cookies and an easy smile. What was supposed to
+              be a casual date turned into a six-hour hangout, complete with an
+              impromptu stroll through a park. Priya realized that beneath the
+              fish photo was a guy with a kind heart and a sense of humor that
+              kept her laughing for years to come.
+            </p>
+          </li>
+
+          <li class="splide__slide">
+            <h2 class="lovestoryh2">The "Last Try" Match</h2>
+
+            <p class="characters">Ethan and Zoey</p>
+            <hr />
+            <p class="story">
+              Zoey was ready to delete the app after one too many awkward dates.
+              She decided to give it one last shot and matched with Ethan, a guy
+              whose bio read: "Looking for someone to share tacos and bad
+              karaoke nights with." She messaged him: "What’s your go-to karaoke
+              song? This is important." Ethan replied: "'Total Eclipse of the
+              Heart,' obviously." Intrigued by his bold choice, Zoey agreed to
+              meet Ethan at a casual taco spot. Their chemistry was instant.
+              They bonded over their mutual love for cheesy rom-coms and their
+              shared dream of traveling to Japan. By the end of the night, Ethan
+              jokingly said, "So, should I delete the app now, or…?" Zoey
+              laughed, but deep down, she knew this was the last first date
+              she’d ever go on.
+            </p>
+          </li>
+
+          <li class="splide__slide">
+            <h2 class="lovestoryh2">Ghosted, Then Found</h2>
+
+            <p class="characters">Priya and Ethan</p>
+            <hr />
+            <p class="story">
+              Priya and Ethan matched on a hookup app during a lonely Friday
+              night. Their chemistry was instant—quick-witted exchanges and a
+              mutual love for 80s music sealed the deal. They planned to meet
+              the next evening, but Ethan ghosted her without explanation.
+              Frustrated, Priya chalked it up to bad luck and moved on. A month
+              later, Ethan reappeared in her inbox with a heartfelt apology. He
+              admitted that he’d freaked out, overwhelmed by the connection they
+              had over something he thought would be casual. He asked for one
+              more chance. Skeptical but curious, Priya agreed to meet him for
+              coffee.
+            </p>
+          </li>
+
+          <li class="splide__slide">
+            <p class="characters">...Priya & Ethan</p>
+            <hr />
+            <p class="story">
+              When they sat down, Ethan confessed he was fresh out of a toxic
+              relationship and wasn’t sure if he was ready to dive into
+              something new. Priya appreciated his honesty but made it clear she
+              wouldn’t settle for mixed signals. That conversation set the tone
+              for what came next: a slow, intentional relationship where they
+              worked through their fears and grew together. Their connection
+              wasn’t instant fireworks but a steady flame that burned brighter
+              over time. Now, Priya and Ethan often say their story is proof
+              that love sometimes needs a second chance—and the courage to take
+              it.
+            </p>
+          </li>
+
+          <li class="splide__slide">
+            <h2 class="lovestoryh2">The Accidental Match</h2>
+
+            <p class="characters">Emma and Jake</p>
+            <hr />
+            <p class="story">
+              Emma was a kindergarten teacher who rarely ventured into the world
+              of hookup apps, feeling they weren’t her scene. But after a night
+              out with her best friend, she downloaded one “just to see what’s
+              out there.” Jake, a mechanic with a love for adventure, was the
+              polar opposite—he swiped casually and didn’t take the app
+              seriously. When Emma and Jake matched, it almost didn’t happen.
+              Jake’s profile featured pictures of him skydiving, dirt biking,
+              and posing with a massive fish.
+            </p>
+          </li>
+
+          <li class="splide__slide">
+            <p class="characters">...Emma and Jake</p>
+            <p class="story">
+              Emma initially thought, Not my type. But his bio—“Looking for
+              someone to laugh at my bad jokes, not just my bad selfies”—caught
+              her attention. Their first conversation was rocky. Emma poked fun
+              at his extreme hobbies, asking if he ever did anything that didn’t
+              involve adrenaline. Jake quipped back: “I fix things for a living,
+              not break them—usually.” Despite their differences, their chat
+              lasted hours, with Emma challenging Jake to a “boring” board game
+              night and Jake promising to introduce her to a world of adventure.
+              When they met in person,
+            </p>
+          </li>
+          <li class="splide__slide">
+            <p class="characters">...Emma and Jake</p>
+            <hr />
+            <p class="story">
+              sparks flew, but not in the typical romantic way. Emma spilled her
+              coffee all over Jake's jacket, and he laughed it off, saying,
+              “Guess you’re not afraid of making a mess either!” They spent the
+              rest of the day exploring a local park, trading sarcastic remarks
+              and surprising each other with how much they enjoyed being out of
+              their comfort zones. Emma brought calm to Jake’s chaotic energy,
+              while Jake encouraged Emma to take more risks. What started as a
+              mismatch became the perfect balance. Now, they’re the couple who
+              plan cozy weekends at home just as often as they take spontaneous
+              road trips, proving that opposites really do attract.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footersocials">
+      <div class="legal">
+        <h3>Legal</h3>
+        <a href="#">Privacy</a>
+        <a href="#">Consumer</a>
+        <a href="#">Health Data</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms</a>
+        <a href="#">Cookie Policy</a>
+        <a href="#">Cookie Policy</a>
+        <a href="#">Intellectual <br />property</a>
+      </div>
+
+      <div class="careers">
+        <h3>Careers</h3>
+        <a href="#">Career Portal</a>
+        <a href="#">Tech Blog</a>
+      </div>
+
+      <div class="socials">
+        <h3>Socials</h3>
+        <div class="social">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="faq">
+      <h3>FAQ</h3>
+      <a href="#">Destinations</a>
+      <a href="#">Press room</a>
+      <a href="#">Contact</a>
+      <a href="#">Promo code</a>
+    </div>
+    <hr style="margin: 0 auto; width: 90%" />
+    <footer class="geton">
+      <h4 style="color: coral; font-size: 1.6rem">Get on!</h4>
+      <p class="geton">
+        Looking for something casual, exciting, or a spark that could lead to
+        more? Suck Hookup App is the ultimate platform to connect with real
+        people who match your vibe. Whether you're straight, LGBTQIA+, or
+        somewhere in between, our diverse and inclusive community has something
+        for everyone. Say goodbye to boring dating sites – with smarter
+        matching, no-pressure vibes, and thousands of connections made daily, We
+        Suck makes finding your next hookup effortless and fun. Ready to make
+        your move? Download We Suck Hookup App today and swipe your way to
+        something unforgettable!
+      </p>
+    </footer>
+
+    <hr style="margin: 0 auto; width: 90%" />
+    <div class="copy">
+      <p>
+        <a href="#">FAQ</a>/ <a href="#">Safety tips</a>/ <a href="#">Terms</a>/
+        <a href="#">Cookie Policy</a>/
+        <a href="#">Privacy Settings</a>
+      </p>
+      <p>&copy;Suck LLC, All right reserved</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/2f8df1a2ea.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="./index.js"></script>
-</body>
+  </body>
 </html>
